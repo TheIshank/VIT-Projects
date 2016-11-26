@@ -1,0 +1,11 @@
+<?php
+if(!isset($_SESSION['name']))
+{
+	header('Location:home.php');
+}
+else
+{
+	session_destroy();
+	header('Location:home.php');
+}
+?>
